@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajithkumar Krishnamoorthy</title>
+    <style>
+
+      .element::-webkit-scrollbar {
+        display: none;
+         -ms-overflow-style: none;
+         scrollbar-width: none;
+      }
+
+      body::-webkit-scrollbar {
+          display: none;
+          -ms-overflow-style: none; 
+          scrollbar-width: none;
+      }
+
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        /* background-color: #384959; */
+        color: white;
+        display: grid;
+        overflow: hidden;
+        /* background: linear-gradient(90deg, #384959 0%, #38495977 50%, #38495900 100%); */
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        font-size: 15px;
+        background: rgba(1, 0, 0, 0.032);
+        border-radius: 1px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(12.2px);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+      }
+      
+      #root {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      #home, #about-me, #skills, #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        margin: 20px 50px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white !important;
+      }
+
+      @media screen and (min-width: 768px) 
+      {
+        #home, #about-me, #skills, #projects {
+        /* display: grid;
+        grid-column-start: auto; */
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px 400px;
+        border-bottom: 1px solid #ccc;
+        border: 1px solid #ccc;
+      }
+      }
+    </style>
+    <script type="module" crossorigin src="/portfolio/assets/index-Bb06luGl.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DQ3P1g1z.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
