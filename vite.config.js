@@ -40,7 +40,7 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [plugin()],
-    base: '../my-portfolio/',
+    base: "/my-portfolio/",
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
