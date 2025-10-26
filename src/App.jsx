@@ -15,7 +15,7 @@ function App() {
             <div style={{display:'grid', overflowY: 'auto', padding: '100px 20px 20px 20px'}}>
                 
                 <div id="home">
-                    <Avatar  sx={{ width: 150, height: 150 }} alt="Ajithkumar Krishnamoorthy" src="src/assets/AjithPhoto.jpg" />
+                    <Avatar  sx={{ width: 150, height: 150 }} alt="Ajithkumar Krishnamoorthy" src="/assets/AjithPhoto.jpg" />
                     <h2>Ajithkumar Krishnamoorthy</h2>
                     <h3>Senior Associate Developer</h3>
                 </div>
