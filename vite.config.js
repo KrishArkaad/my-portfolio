@@ -36,13 +36,11 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
 
 const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
     env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'https://localhost:7031';
-
-    const repoName = 'my-portfolio';
-
+    
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [plugin()],
-    base: `$/${repoName}/`,
+    base: '/my-portfolio/',
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
