@@ -46,7 +46,7 @@
 
       .header {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         padding: 20px;
         position: fixed;
         width: 100%;
@@ -58,6 +58,11 @@
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(12.2px);
         border: 1px solid rgba(255, 255, 255, 0.45);
+      }
+
+      .tabs{
+        cursor: pointer;
+        padding: 0px 20px;
       }
       
       #root {
@@ -78,13 +83,35 @@
       }
 
       #home-section{
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
         width: 100%;
         background: linear-gradient(90deg, #7b2cbf 0%, #9d4edd 50%, #5a189a 100%);
         height: 100vh;
         padding-top: 62px;
         margin-top: -62px;
+      }
+
+
+      #aboutme-section{
+        width: 100%;
+        background: linear-gradient(90deg, #5a189a  0%, #7b2cbf 50%, #9d4edd  100%);
+        height: 100vh;
+        padding-top: 62px;
+      }
+
+      #skills-section{
+        width: 100%;
+        background: linear-gradient(90deg, #5a189a  0%, #7b2cbf 50%, #9d4edd  100%);
+        height: 100vh;
+        padding-top: 62px;
+      }
+
+      #projects-section{
+        width: 100%;
+        background: linear-gradient(90deg, #5a189a  0%, #7b2cbf 50%, #9d4edd  100%);
+        height: 100vh;
+        padding-top: 62px;
       }
 
       a {
