@@ -4,23 +4,25 @@ import Avatar from '@mui/material/Avatar';
 function App() {
 
     return (
-        // <div style={{display:"flex"}}>Hello</div>
-        <div style={{ display:"grid", gridTemplateRows: "auto 1fr", height: "100vh", background:"transparent" }}>
+        <div style={{ display:"flex", height: "100vh", background:"transparent" }}>
             <div className='header'>
                 <div style={{cursor: "pointer"}}><a href="#home">Home</a></div>
                 <div style={{cursor: "pointer"}}><a href="#about-me">About Me</a></div>
                 <div style={{cursor: "pointer"}}><a href="#skills">Skills</a></div>
                 <div style={{cursor: "pointer"}}><a href="#projects">Projects</a></div>
             </div>
-            <div style={{display:'grid', overflowY: 'auto', padding: '100px 20px 20px 20px'}}>
-                
-                <div id="home">
-                    <Avatar  sx={{ width: 150, height: 150 }} alt="Ajithkumar Krishnamoorthy" src="/assets/AjithPhoto.jpg" />
-                    <h2>Ajithkumar Krishnamoorthy</h2>
-                    <h3>Senior Associate Developer</h3>
-                </div>
+            <div style={{display: "flex", flexDirection: "column", width: "100%"}}>
 
-                <Divider />
+                <section className='body-section' >
+                    <section id="home-section">
+                        <div id="home">
+                            <Avatar  sx={{ width: 150, height: 150 }} alt="Ajithkumar Krishnamoorthy" src="/assets/AjithPhoto.jpg" />
+                            <h2>Ajithkumar Krishnamoorthy</h2>
+                            <h3>Senior Associate Developer</h3>
+                        </div>
+                    </section>
+
+                    <Divider />
                 <div id="about-me">
                     <h2>About Me</h2>
                     <p>I’m a Software Engineer with 4+ years of hands-on experience designing and delivering scalable, cloud-native web applications across healthcare, compliance, and enterprise domains. I specialize in modernizing legacy systems, leading micro-frontend transformations, and architecting robust, cloud-native solutions with Angular, React, .NET Core, PostgreSQL, and Azure. I love crafting seamless RESTful APIs, applying strong DSA fundamentals, and unifying diverse UI frameworks to accelerate delivery and create real business impact.</p>
@@ -52,6 +54,7 @@ function App() {
                     <h2>Projects</h2>
                     <p>Here are some of my projects.</p>
                 </div>
+                </section>
             </div>  
         </div>
     );
